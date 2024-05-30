@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body{
+    background-color: rgb(236, 234, 234);
+}
+header{
+    height: 67px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    p{
+        font-family: "Rubik", sans-serif;
+    }
+    img{
+        height: 55%;
+    }
+    .search{
+        height: 55%;
+        width: 40%;
+        background-color: rgb(230, 244, 248);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border-radius: 5px;
+        input{
+            height: 86%;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-size: 1.5rem;
+            
+        }
+        ::placeholder{
+            font-size: 1.2rem;
+        }
+        svg{
+            margin-left: 10px;
+            
+        }
+    }
+    .login, .cart, .seller{
+        height: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 0px 5px;
+    }
+    .login:hover{
+        background-color: rgb(0, 115, 255);
+        border-radius: 7px;
+        transition:all .1s ease;
+    }
+    .login:hover .bi-chevron-down{
+        transform: rotate(180deg);
+        transition: all .3s linear;
+    }
+}
+*{
+    margin: 0;
+}
+.second-nav{
+    width: 98%;
+    height: 125px;
+    background-color: white;
+    margin: auto;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    .nav-item{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        flex-direction: column;
+        p{
+            text-align: center;
+            font-family: "Rubik", sans-serif;
+            font-size: 1rem;
+            
+        }
+        img{
+            width: 70px;
+        }
+        img:hover{
+            filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+        }
+    }
+}
